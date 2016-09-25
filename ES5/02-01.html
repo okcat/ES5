@@ -1,0 +1,122 @@
+<!-- 
+[문제01] 프로그래밍 언어의 어휘구조
+1. 프로그램을 어떻게 작성해야 하는지 알려주는 기본 규칙
+2. 가장 저수준 문법
+3. 변수 이름을 어떻게 작성해야 하는지
+4. 어떤 문자를 주석으로 사용하 수 있는지
+5. 하나의 프로그램 문장이 다른 문장과 어떻게 구분이 되는지 다룬다.
+
+[문제02] 자바스크립트 프로그램은 ( ) 문자 집합을 사용해 작성된다.
+Unicode
+
+ECMAScript 5표준은 Unicode 3 이상을 지원해야 한다.
+
+[문제03] 자바스크립트는 대소문자를 ( ) 다.
+        HTML은 대소문자를 ( ) 다.
+       XHTML은 대소문자를 ( ) 다.
+구분한
+구분하지 않는
+구분한
+
+[문제04] HTML 에서는 태그나 속성 이름을 대소문자 () 입력,
+HTML5는 태그, 속성 ()로 입력하는 것이 규칙
+자바스크립트는 모두 ( ) 로 입력
+구분없이, 소문자, 소문자
+
+[문제05] HTML 이벤트 처리기 속성 한가지만 적기
+onclick, onClick
+
+[문제06] 유니코드
+공백 문자:(\u0020)
+탭:(\0009)
+수직탭(\u000B)
+폼피드(\u000c)
+줄바꿈 없는 공백(\u00A0)
+바이트순서표식(\uFEFF)
+라인피드(\u000A)
+캐리지 리턴(\u000D)
+줄바꿈 문자(\u2028)
+문단 구분자(\u2029)
+RIGHT-TO-LEFT 표식(\u200F)
+LEFT-TO-RIGHT 표식(\u200E)
+ZERO WIDTH JOINER(\u200D)
+ZERO WIDTH NON-JOINER(\u200C)
+
+[문제07] 바이트 순서 표식
+1. BOM(Byte Order Mark) 이라고도 함.
+2. 유니코드에서 한 문자를 나타내는 두 바이트를 앞에서 부터 읽을지  뒤에서부터 읽을지 결정
+
+[문제08] 줄바꿈 없는 공백
+1. non-breaking space, no-break space, 줄여서 NBSP
+2. 또는 낱말 잘림 방지 공백은 공백문자의 한 형태로
+3. 현 위치에서 자동 줄바꿈(워드랩)을 막는 데 쓰인다.
+4. 고정 공백이라고도 한다.
+
+[문제09] 토큰
+1. 프로그래밍 언어에서 더 이상 나눌 수 없는 최소한의 단위
+2. 키워드나 변수의 이름, 숫자 등이 여기에 해당
+
+[문제10] 주석
+1. //
+2. /**/
+
+[문제11] 리터럴(literal)
+1. 프로그램에 직접 나타나는 데이터 값
+2. ex) 12, 1.2, "helo world"..
+
+[문제12] 식별자(identifier)
+1. 이름
+2. 알파벳, 밑줄(_), 혹은 달러($)로 시작
+3. 이어지는 문자들은 아라파벳이나 숫자, 밑줄(_) 혹은 달러($)
+4. 숫자가 첫글자에 올 수 없다.(숫자와 식별자 구별하기 위함.)
+
+[문제13] 예약어
+breake,	delete,	function,	return, typeof
+case,	do,		if ,		switch,	var
+catch, else, in, this, void
+continue, false, instanceof, throw, while
+debugger, finallly, new, true, with
+default, for, null, try
+
+class	const	enum	export	extends import super
+
+implements let private public yeild interface package
+protected static
+
+arguments eval
+
+[문제14] js 전영 변수, 함수
+arguments encodeURI Infinity Number RegExp
+Array encodeURIComponent isFinite Object String
+Boolean Error isNaN parseFloat SyntaxError
+Date eval JSON parseInt TypeError
+decodeURI EvalError Math RangeError undefined
+decodeURIComponent Function NaN ReferenceError URIError
+
+[문제14] 세미콜론 생략 가능한 경우
+1. 여러 문장이 서로 다른 줄에 나타나는 경우
+a = 3
+b = 4;
+(a=3;b=4)
+2. 프로그램의 끝이나 다음 토큰이 }일 경우
+3. 세미콜론 없이 코드를 해석할 수 없는 경우에만 줄바꿈을 세미콜론으로 해석한다.
+var a
+a
+=
+3
+console.log(a)
+
+var a; a=3; console.log(a)
+
+var y = x + f
+(a+b).toString()
+
+var y=x+f(a+b).toString();
+
+4. 일반적으로, 문장이 (,[,/,+,-로 시작하면 자바스크립트
+인터프리터는 해당 문장을 이전 문장에 이어서 해석
+
+
+-->
+
+
